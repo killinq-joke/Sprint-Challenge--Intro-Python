@@ -8,10 +8,12 @@ class GroundVehicle():
     def __init__(self, num_wheels = 4):
         self.num_wheels = num_wheels
 
+    def drive(self):
+        return "vroooom"
 
-zak = GroundVehicle(11)
+zak = GroundVehicle()
 
-print(zak.num_wheels)
+print(zak.drive())
 
 # Subclass Motorcycle from GroundVehicle.
 #
