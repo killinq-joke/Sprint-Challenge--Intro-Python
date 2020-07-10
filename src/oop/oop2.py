@@ -19,21 +19,21 @@ class GroundVehicle():
 # Override the drive() method in Motorcycle so that it returns "BRAAAP!!"
 
 class Motorcycle(GroundVehicle):
-    def __init__(self):
-        self.num_wheels = 2
+    def __init__(self, num_wheels = 2):
+        self.num_wheels = num_wheels
     
     def drive(self):
-        return "BRAAAP !!"
+        return "BRAAAP!!"
     
-vehicles = [
-    GroundVehicle(),
-    GroundVehicle(),
-    Motorcycle(),
-    GroundVehicle(),
-    Motorcycle(),
-]
+# vehicles = [
+#     GroundVehicle(),
+#     GroundVehicle(),
+#     Motorcycle(),
+#     GroundVehicle(),
+#     Motorcycle(),
+# ]
 
-# Go through the vehicles list and print the result of calling drive() on each.
+# # Go through the vehicles list and print the result of calling drive() on each.
 
-for vehicle in vehicles:
-    print(vehicle.drive())
+# for vehicle in vehicles:
+#     print(vehicle.drive())
