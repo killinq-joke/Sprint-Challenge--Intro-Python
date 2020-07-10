@@ -22,11 +22,32 @@ class Vehicle:
     def __init(self, name):
         self.name = name
 
+
+class FlightVehicle(Vehicle):
+    def __init__(self, d):
+        self.d = d
+
+
+class Airplane(FlightVehicle):
+    def __init__(self, e):
+        self.e = e
+
+
+class Starship(FlightVehicle):
+    def __init__(self, f):
+        self.f = f
+
+
 class GroundVehicle(Vehicle):
     def __init__(self, a):
         self.a = a
+
 
 class Car(GroundVehicle):
     def __init__(self, b):
         self.b = b
 
+
+class Motorcycle(GroundVehicle):
+    def __init__(self, c):
+        self.c = c
