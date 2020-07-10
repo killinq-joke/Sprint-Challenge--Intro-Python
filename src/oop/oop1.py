@@ -26,4 +26,7 @@ class GroundVehicle(Vehicle):
     def __init__(self, a):
         self.a = a
 
+class Car(GroundVehicle):
+    def __init__(self, b):
+        self.b = b
 
