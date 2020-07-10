@@ -52,9 +52,11 @@ print(b)
 print("Starts between C and G, inclusive:")
 c = []
 for CG in humans:
-    for letter in list(string.ascii_uppercase)[2:20]:
+    for letter in list(string.ascii_uppercase)[2:-19]:
+        print(letter)
         if CG.name.startswith(letter):
             c.append(CG.name)
+    
 print(c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
@@ -98,4 +100,6 @@ print(g)
 # Write a list comprehension that contains the square root of all the ages.
 print("Square root of ages:")
 h = []
+for sqr in humans:
+    h.append(math.sqrt(sqr.age))
 print(h)
