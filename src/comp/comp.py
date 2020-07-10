@@ -77,6 +77,9 @@ print(e)
 # inclusive.
 print("Names and ages between 27 and 32:")
 f = []
+for btw27_32 in humans:
+    if btw27_32.age >= 27 and btw27_32.age <= 32:
+        f.append((btw27_32.name, btw27_32.age))
 print(f)
 
 # Write a list comprehension that creates a list of new Humans like the old
