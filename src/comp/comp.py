@@ -55,7 +55,7 @@ for CG in humans:
     for letter in list(string.ascii_uppercase)[2:-19]:
         if CG.name.startswith(letter):
             c.append(CG.name)
-    
+
 print(c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.

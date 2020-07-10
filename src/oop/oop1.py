@@ -18,7 +18,7 @@
 #
 # Put a comment noting which class is the base class
 
-class Vehicle: #BASE CLASS
+class Vehicle:  # BASE CLASS
     pass
 
 
