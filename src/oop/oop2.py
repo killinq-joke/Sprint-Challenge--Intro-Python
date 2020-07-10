@@ -11,10 +11,6 @@ class GroundVehicle():
     def drive(self):
         return "vroooom"
 
-zak = GroundVehicle()
-
-print(zak.drive())
-
 # Subclass Motorcycle from GroundVehicle.
 #
 # Make it so when you instantiate a Motorcycle, it automatically sets the number
@@ -22,8 +18,15 @@ print(zak.drive())
 #
 # Override the drive() method in Motorcycle so that it returns "BRAAAP!!"
 
-# TODO
-
+class Motorcycle(GroundVehicle):
+    def __init__(self):
+        self.num_wheels = 2
+    
+    def drive(self):
+        return "BRAAAP !!"
+    
+zak = Motorcycle()
+print(zak.drive())
 # vehicles = [
 #     GroundVehicle(),
 #     GroundVehicle(),
