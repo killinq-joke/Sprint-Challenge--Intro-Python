@@ -17,3 +17,13 @@
 #     pass
 #
 # Put a comment noting which class is the base class
+
+class Vehicle:
+    def __init(self, name):
+        self.name = name
+
+class GroundVehicle(Vehicle):
+    def __init__(self, a):
+        self.a = a
+
+
