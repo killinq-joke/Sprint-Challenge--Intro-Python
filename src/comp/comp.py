@@ -53,7 +53,6 @@ print("Starts between C and G, inclusive:")
 c = []
 for CG in humans:
     for letter in list(string.ascii_uppercase)[2:-19]:
-        print(letter)
         if CG.name.startswith(letter):
             c.append(CG.name)
     
@@ -88,18 +87,16 @@ print(f)
 # list, except with all the names uppercase and the ages with 5 added to them.
 # The "humans" list should be unmodified.
 print("All names uppercase:")
-# g = [x.name.upper(),  for x in humans]
 g = []
-up_humans = humans.copy()
+up_humans = humans[:]
 for x in up_humans:
-    x.name = x.name.upper()
-    x.age = x.age + 5
-    g.append(x)
+    g.append(Human(x.name.upper(), x.age + 5))
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
 print("Square root of ages:")
 h = []
+
 for sqr in humans:
     h.append(math.sqrt(sqr.age))
 print(h)
